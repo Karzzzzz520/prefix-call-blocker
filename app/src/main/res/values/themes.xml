@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      这里刻意使用 Light 主题：深浅两套配色需要额外维护 values-night，
+      先保证任何机型上观感一致。想支持深色模式把下面 parent 换成
+      Theme.Material3.DayNight.NoActionBar，并把面色改用 ?attr/colorSurface 即可。
+    -->
+    <style name="Theme.PrefixCallBlocker" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorOnPrimary">@color/brand_on_primary</item>
+        <item name="android:statusBarColor">@color/brand_primary</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

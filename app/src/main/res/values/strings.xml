@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">前缀拦截</string>
+
+    <!-- 授权状态 -->
+    <string name="status_granted_title">已获得来电筛选权限</string>
+    <string name="status_granted_detail">系统会在来电响铃前把号码交给本应用判断，命中规则的号码会被拦截。</string>
+    <string name="status_missing_title">尚未获得来电筛选权限</string>
+    <string name="status_missing_detail">需要在系统里把本应用设为「来电显示和骚扰拦截 / Caller ID &amp; spam」应用，否则拦截不会生效。</string>
+    <string name="grant_role">去授权</string>
+
+    <!-- 开关 -->
+    <string name="switch_enabled">启用拦截</string>
+    <string name="switch_enabled_hint">总开关。关闭后所有来电一律放行。</string>
+    <string name="switch_hidden">拦截隐藏号码</string>
+    <string name="switch_hidden_hint">开启后，未显示号码的来电也会被拦截。</string>
+    <string name="switch_log_only">测试模式（只记录不拦截）</string>
+    <string name="switch_log_only_hint">建议先开几天，确认没有误伤正常来电后再关闭。</string>
+
+    <!-- 规则 -->
+    <string name="rules_title">拦截规则</string>
+    <string name="add_rule">添加规则</string>
+    <string name="edit_rule">编辑规则</string>
+    <string name="rules_empty">还没有规则。点「添加规则」新建一条，例如前缀 400。</string>
+    <string name="rule_meta">%1$s · %2$s · %3$s</string>
+    <string name="no_note">无备注</string>
+    <string name="hidden_number">隐藏号码</string>
+    <string name="delete_rule_title">删除规则</string>
+    <string name="delete_rule_message">确定删除规则「%1$s」？</string>
+
+    <!-- 匹配方式与动作 -->
+    <string name="match_prefix">开头匹配</string>
+    <string name="match_contains">包含</string>
+    <string name="match_regex">正则</string>
+    <string name="action_block">拦截挂断</string>
+    <string name="action_silence">静音拦截</string>
+    <string name="action_allow">白名单放行</string>
+
+    <!-- 规则编辑对话框 -->
+    <string name="rule_pattern_hint">号码前缀 / 片段 / 正则</string>
+    <string name="rule_match_type_label">匹配方式</string>
+    <string name="rule_action_label">执行动作</string>
+    <string name="rule_note_hint">备注（可空）</string>
+
+    <!-- 通用 -->
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="confirm">确定</string>
+    <string name="edit">编辑</string>
+    <string name="edit_content_desc">编辑这条规则</string>
+    <string name="delete_content_desc">删除这条规则</string>
+
+    <!-- 错误提示 -->
+    <string name="error_empty_pattern">请填写号码或正则表达式</string>
+    <string name="error_bad_regex">正则表达式不合法：%1$s</string>
+
+    <!-- 拦截记录 -->
+    <string name="logs_title">拦截记录</string>
+    <string name="logs_empty">还没有拦截记录。</string>
+    <string name="log_meta">规则 %1$s · %2$s</string>
+    <string name="view_logs">查看拦截记录</string>
+    <string name="clear_logs">清空记录</string>
+    <string name="clear_logs_message">确定清空全部拦截记录？</string>
+
+    <string name="toast_pick_in_settings">请在系统设置中把本应用设为「来电显示和骚扰拦截」应用</string>
+</resources>
