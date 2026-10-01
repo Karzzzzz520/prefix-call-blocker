@@ -15,10 +15,8 @@ jobs:
         with:
           distribution: temurin
           java-version: '21'
-      - name: Setup Android SDK
-        uses: android-actions/setup-android@v3
-      - name: Install SDK components
-        run: sdkmanager "platforms;android-34" "build-tools;34.0.0"
+      - name: Show Android SDK
+        run: echo "ANDROID_HOME=$ANDROID_HOME" && ls $ANDROID_HOME/platforms || true
       - name: Grant execute permission
         run: chmod +x ./gradlew
       - name: Build debug APK
